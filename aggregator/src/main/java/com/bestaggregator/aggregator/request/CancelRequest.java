@@ -6,5 +6,5 @@ import lombok.Data;
 public class CancelRequest {
     private Long order_id;
     private Long transaction;
-    private Long taxi_id;
+    private String agr;
 }

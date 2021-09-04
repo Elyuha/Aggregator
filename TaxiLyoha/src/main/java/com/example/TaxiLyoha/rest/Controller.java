@@ -1,13 +1,12 @@
-package com.example.TaxiBest.rest;
+package com.example.TaxiLyoha.rest;
 
-import com.example.TaxiBest.ResAndReq.*;
+import com.example.TaxiLyoha.ResAndReq.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.net.ResponseCache;
-import java.util.Random;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
@@ -48,7 +47,7 @@ public class Controller {
 
     public static int cost(Double latitudeStart, Double longitudeStart,
                        Double latitudeFinish, Double longitudeFinish){
-        return (int) ((latitudeStart * longitudeStart)
-                        /(latitudeFinish + longitudeFinish));
+        return (int) ((latitudeStart * longitudeStart) *22
+                        /(latitudeFinish + longitudeFinish)+100);
     }
 }

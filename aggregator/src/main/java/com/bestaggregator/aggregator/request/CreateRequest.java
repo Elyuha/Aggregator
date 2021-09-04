@@ -9,7 +9,7 @@ import java.time.LocalTime;
 @Data
 public class CreateRequest {
     private Long user_id;
-    private Long taxi_id;
+    private String agr;
     private String name;
     private Place startPlace;
     private Place finishPlace;

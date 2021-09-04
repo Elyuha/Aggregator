@@ -14,7 +14,6 @@ public class User {
     private Long id;
 
     @Column
-    @NotNull
     private String name;
 
     @Column

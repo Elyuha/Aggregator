@@ -156,7 +156,7 @@ public class BestTaxiConnector implements Connector {
 
             String url = "http://localhost:8081/getPrice";
             HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
-            connection.setRequestMethod("GET");
+            connection.setRequestMethod("POST");
             connection.setDoOutput(true);
             connection.getOutputStream().write(postDataBytes);
 
